@@ -1,0 +1,54 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mane Chain | Hair Jewelry</title>
+<meta name="description" content="Mane Chain hair jewelry">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head><body>
+<main>
+<section class="hero"><div class="container hero-copy">
+  <div class="eyebrow">Hair jewelry made to shine</div>
+  <h1>Elevate your style with <span class="script">Mane Chain</span></h1>
+  <p>Playful. Polished. Effortless. Jewelry-inspired pieces for braids, waves, updos, and everything in between.</p>
+  <a class="btn light" href="shop.html">Shop Hair Jewelry</a>
+</div></section>
+
+<section class="section"><div class="container">
+  <div class="section-title"><div><div class="eyebrow">Meet the collection</div><h2>Your new favorite hair accessory.</h2></div><p>From delicate links to statement clips, Mane Chain is designed to add shine without overcomplicating your style.</p></div>
+  <div id="featuredGrid" class="product-grid"></div>
+</div></section>
+
+<section class="section compact"><div class="container story-grid">
+  <div class="story-art"></div>
+  <div class="story-copy">
+    <div class="eyebrow">The story behind the shine</div>
+    <h2>Hair accessories, all grown up.</h2>
+    <div class="script">Hi, I’m Alli.</div>
+    <p>As a licensed cosmetologist, I’ve always loved finding fun, creative ways to make hair feel a little more special.</p>
+    <p>Mane Chain was inspired by the feathers and tinsel we loved when we were younger—reimagined with a more grown-up, polished feel.</p>
+    <a class="btn outline" href="about.html">Meet Alli</a>
+  </div>
+</div></section>
+
+<section id="how" class="section"><div class="container">
+  <div class="section-title"><div><div class="eyebrow">How it works</div><h2>Shine in seconds.</h2></div><p>Choose your piece, pick your attachment style, and make it yours.</p></div>
+  <div class="how-grid">
+    <div class="how-card"><div class="step">01</div><h3>Choose your piece</h3><p>Go subtle or make a statement with clips, chains, and bead-installed pieces.</p></div>
+    <div class="how-card"><div class="step">02</div><h3>Pick your install</h3><p>Choose quick clip-in styling or a bead installation for a more integrated look.</p></div>
+    <div class="how-card"><div class="step">03</div><h3>Style your mane</h3><p>Braids, buns, waves, ponytails, updos—wear it your way.</p></div>
+  </div>
+</div></section>
+
+<section class="banner">
+  <div class="script">A little glam. A lot of personality.</div>
+  <h2>Jewelry for your hair, designed to shine.</h2>
+  <a class="btn" href="shop.html">Shop the Collection</a>
+</section>
+</main>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{document.querySelector('#featuredGrid').innerHTML=window.MANE_PRODUCTS.slice(0,3).map(card).join('')});
+</script>
+
+<script src="assets/js/products.js"></script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/shop.js"></script>
+</body></html>
