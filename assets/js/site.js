@@ -26,7 +26,7 @@ function renderShell(){
   <div class="announcement">Hair jewelry made to shine</div>
   <header class="site-header"><div class="container nav">
     <button class="mobile-toggle" aria-label="Menu">☰</button>
-    <nav class="nav-links"><a href="shop.html">Shop</a><a href="index.html#how">How It Works</a><a href="about.html">About</a><a href="faq.html">FAQ</a></nav>
+    <nav class="nav-links"><a href="shop.html">Shop</a><a href="index.html#how">How It Works</a><a href="about.html">About</a><a href="events.html">Events</a><a href="faq.html">FAQ</a></nav>
     <a href="index.html" class="brand"><div class="brand-main">Mane Chain</div><div class="brand-sub">Hair Jewelry</div></a>
     <div class="nav-actions"><a href="contact.html">Contact</a><button class="cart-button">Bag <span class="cart-count">0</span></button></div>
   </div></header>`);
@@ -41,10 +41,10 @@ function renderShell(){
     <div class="footer-grid">
       <div class="footer-brand"><div class="brand-main">Mane Chain</div><div class="brand-sub">Hair Jewelry</div><p>Playful, polished hair jewelry designed to bring a little shine to every style.</p></div>
       <div class="footer-col"><h4>Shop</h4><a href="shop.html">All Pieces</a><a href="shop.html?install=Clip">Clip-In</a><a href="shop.html?install=Bead">Bead</a></div>
-      <div class="footer-col"><h4>Discover</h4><a href="index.html#how">How It Works</a><a href="about.html">About Alli</a><a href="faq.html">FAQ</a></div>
+      <div class="footer-col"><h4>Discover</h4><a href="index.html#how">How It Works</a><a href="about.html">About Alli</a><a href="events.html">Events</a><a href="faq.html">FAQ</a></div>
       <div class="footer-col"><h4>Help</h4><a href="contact.html">Contact</a><a href="faq.html#shipping">Shipping</a><a href="faq.html#care">Care</a></div>
     </div>
-    <div class="footer-bottom">© 2026 Mane Chain · V1.1</div>
+    <div class="footer-bottom">© 2026 Mane Chain · V1.2</div>
   </div></footer>`);
   $('.mobile-toggle')?.addEventListener('click',()=>$('.nav-links')?.classList.toggle('open'));
   $('.cart-button')?.addEventListener('click',openCart);
