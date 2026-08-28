@@ -2,7 +2,7 @@
 function card(p){
   return `<article class="product-card">
     <a href="product.html?id=${p.id}">
-      <div class="product-art"></div>
+      <div class="product-art has-photo"><img src="${p.image}" alt="Mane Chain hair jewelry styled in hair" loading="lazy"></div>
       <div class="product-info">
         <div class="product-kicker">${p.install}</div>
         <div class="product-meta"><h3 class="product-name">${p.name}</h3><span>—</span></div>

@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   const id=new URLSearchParams(location.search).get('id')||'dome-piece';
   const p=window.MANE_PRODUCTS.find(x=>x.id===id)||window.MANE_PRODUCTS[0];
   document.title=`${p.name} | Mane Chain`;
+  const mainImg=document.querySelector('#productMainImage'); if(mainImg){mainImg.src=p.image; mainImg.alt=`${p.name} by Mane Chain styled in hair`;}
   document.querySelector('#productName').textContent=p.name;
   document.querySelector('#productInstall').textContent=p.install;
   document.querySelector('#productShort').textContent=p.short;

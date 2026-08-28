@@ -16,7 +16,7 @@ function renderCart(){
   const box=$('#cartItems'); if(!box)return;
   box.innerHTML=cart.length?cart.map(i=>{
     const p=window.MANE_PRODUCTS.find(x=>x.id===i.id);
-    return `<div class="cart-item"><div class="cart-thumb"></div><div><h4>${p.name}</h4><small>${i.finish} · Qty ${i.qty}</small></div><button class="cart-remove" onclick="removeFromCart('${i.key}')">×</button></div>`
+    return `<div class="cart-item"><div class="cart-thumb"><img src="${p.image}" alt=""></div><div><h4>${p.name}</h4><small>${i.finish} · Qty ${i.qty}</small></div><button class="cart-remove" onclick="removeFromCart('${i.key}')">×</button></div>`
   }).join(''):`<div class="empty"><p>Your bag is empty.</p><a class="btn outline" href="shop.html">Shop Hair Jewelry</a></div>`;
 }
 function openCart(){$('#cartDrawer')?.classList.add('open');$('#overlay')?.classList.add('show');document.body.style.overflow='hidden'}
@@ -44,7 +44,7 @@ function renderShell(){
       <div class="footer-col"><h4>Discover</h4><a href="index.html#how">How It Works</a><a href="about.html">About Alli</a><a href="events.html">Events</a><a href="faq.html">FAQ</a></div>
       <div class="footer-col"><h4>Help</h4><a href="contact.html">Contact</a><a href="faq.html#shipping">Shipping</a><a href="faq.html#care">Care</a></div>
     </div>
-    <div class="footer-bottom">© 2026 Mane Chain · V1.2</div>
+    <div class="footer-bottom">© 2026 Mane Chain · V1.3</div>
   </div></footer>`);
   $('.mobile-toggle')?.addEventListener('click',()=>$('.nav-links')?.classList.toggle('open'));
   $('.cart-button')?.addEventListener('click',openCart);
